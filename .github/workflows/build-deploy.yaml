@@ -10,7 +10,10 @@ jobs:
   build:
   
     name: This is the build job
-    runs-on: [Front-1, Front-2]
+    runs-on: ${{ matrix.os }}
+    strategy:
+        matrix:
+            os: [Front-1, Front-2]
 
     steps:
       - name: Step 1

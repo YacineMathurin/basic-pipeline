@@ -10,12 +10,12 @@ jobs:
   build:
   
     name: This is the build job
-    runs-on: Front 
+    runs-on: Front
 
     steps:
       - name: Step 1
         run:
-          echo "Task performed at the build step"
+          echo "Task performed at the build step on front 1"
   
 
 

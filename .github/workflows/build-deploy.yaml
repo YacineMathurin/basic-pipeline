@@ -11,7 +11,7 @@ jobs:
   
     name: This is the build job
     runs-on:
-      labels: Front
+      labels: [Front-1, Front-2]
 
     steps:
       - name: Step 1

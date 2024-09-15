@@ -10,7 +10,8 @@ jobs:
   build:
   
     name: This is the build job
-    runs-on: self-hosted
+    runs-on:
+      group: Default
 
     steps:
       - name: Step 1

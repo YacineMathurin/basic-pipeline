@@ -1,31 +1,22 @@
-name: Build and Deploy
+name: Build and Deploy My App
 
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
 
 jobs:
+
+
   build:
   
     name: This is the build job
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - name: Step 1
         run:
           echo "Task performed at the build step"
   
-  deploy:
-    needs: [build]
 
-    name: Setup and Deploy
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Deploy
-      run: 
-        echo "Task performed at the build step"
 
  
